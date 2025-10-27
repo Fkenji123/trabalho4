@@ -1,0 +1,247 @@
+/* ======== ESTILO GERAL ======== */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f7;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ======== CABEÇALHO ======== */
+header {
+  background-color: #2e8b57; 
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+  border-bottom: 4px solid #1f5f3c;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+/* ======== MENU DE NAVEGAÇÃO ======== */
+nav {
+  display: flex;                 /* ativa flexbox */
+  justify-content: center;       /* centraliza os itens horizontalmente */
+  gap: 15px;                     /* espaço entre os links */
+  margin: 20px 0;
+  flex-wrap: wrap;               /* permite quebrar linha em telas pequenas */
+}
+
+nav a {
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  background-color: #28a745;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+nav a:hover {
+  background-color: #1f7a33;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+}
+
+nav a.active {
+  background-color: #2e8b57;         /* cor diferente para o link ativo */
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  transform: translateY(-2px);
+}
+
+/* ======== IMAGEM PRINCIPAL ======== */
+#img1 {
+  display: block;
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-bottom: 4px solid #2e8b57;
+}
+
+/* ======== SEÇÕES ======== */
+section {
+  max-width: 900px;
+  margin: 40px auto;
+  background-color: white;
+  padding: 25px 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+  color: #2e8b57;
+  margin-top: 0;
+}
+
+/* ======== ENDEREÇO ======== */
+address {
+  font-style: normal;
+  background-color: #f9fdf9;
+  padding: 15px;
+  border-left: 4px solid #2e8b57;
+  border-radius: 6px;
+}
+
+/* ======== RODAPÉ ======== */
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #2e8b57;
+  color: white;
+  font-size: 14px;
+  margin-top: 40px;
+}
+
+/* ======== ESTILO DO PROJETO ======== */
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px; 
+  margin: 0 auto;
+}
+
+.projeto {
+  display: flex;
+  align-items: center;
+  gap: 20px; 
+  background-color: #f7f7f7;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.projeto img {
+  width: 200px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.texto {
+  flex: 1;
+}
+
+.texto strong {
+  font-size: 18px;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 4px 8px;
+  margin: 5px 3px 10px 0;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  border-radius: 12px;
+}
+
+.verde { background-color: #28a745; }
+.azul { background-color: #007bff; }
+.amarelo { background-color: #ffc107; }
+
+.badges {
+  margin-top: 5px;
+}
+
+/* ======== ESTILO DO FORMULÁRIO ======== */
+main.container {
+  max-width: 700px;
+  margin: 40px auto;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+}
+
+main.container h2 {
+  text-align: center;
+  color: #2e8b57;
+  margin-bottom: 25px;
+}
+
+fieldset {
+  border: 2px solid #2e8b57;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #f9fdf9;
+}
+
+legend {
+  font-weight: bold;
+  color: #2e8b57;
+  padding: 0 10px;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 8px 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  box-sizing: border-box;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus,
+select:focus {
+  border-color: #2e8b57;
+  box-shadow: 0 0 5px rgba(46, 139, 87, 0.4);
+  outline: none;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  background-color: #2e8b57;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #256f46;
+}
+
+input[type="number"],
+input[type="text"],
+input[type="email"] {
+  margin-bottom: 8px;
+}
+
+/* ======== EFEITO DE ENTRADA ======== */
+section, .projeto, main.container {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+section.show, .projeto.show, main.container.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ======== LINK ATIVO DO MENU ======== */
+nav a.active {
+  text-decoration: underline;
+  color: #e0ffe5;
+}
