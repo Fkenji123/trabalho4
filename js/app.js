@@ -2,7 +2,7 @@ const app = document.getElementById('app');
 
 async function loadPage(page) {
   try {
-    const res = await fetch(`templates/${page}.html`);
+    const res = await fetch(`partials/${page}.html`);
     if (!res.ok) throw new Error('Página não encontrada');
     const html = await res.text();
     app.innerHTML = html;
