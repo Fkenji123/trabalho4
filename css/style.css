@@ -306,6 +306,9 @@ body.high-contrast input{
   background-color: #1b1818;
   color:white
 }
+
+
+body.high-contrast 
 body.high-contrast fieldset,
 body.high-contrast div,
 body.high-contrast address,
@@ -315,4 +318,15 @@ body.high-contrast {
 }
 body.high-contrast a {
   color: yellow;
+}
+body.high-contrast #accessibility-menu {
+  background-color: #181717 !important;
+  color: #fff !important;
+  border-color: #fff !important;
+}
+
+body.high-contrast #accessibility-menu button {
+  background-color: #2f2c2c !important;
+  color: rgb(255, 255, 255) !important;
+  border: 1px solid #fff !important;
 }
