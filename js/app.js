@@ -111,3 +111,26 @@ document.getElementById("decrease-font").onclick = function() {
 document.getElementById("toggle-contrast").onclick = function() {
   document.body.classList.toggle("high-contrast");
 };
+document.getElementById("read-text").onclick = function() {
+  // Obtém o texto selecionado pelo usuário
+  const selectedText = window.getSelection().toString().trim();
+
+  // Se não houver seleção, mostra um aviso
+  if (!selectedText) {
+    alert("Selecione um texto para ser lido.");
+    return;
+  }
+
+  // Cria o objeto de fala
+  const utterance = new SpeechSynthesisUtterance(selectedText);
+  utterance.lang = 'pt-BR';
+
+  // Cancela qualquer leitura anterior e começa a nova
+  speechSynthesis.cancel();
+  speechSynthesis.speak(utterance);
+};
+
+// Botão para parar a leitura
+document.getElementById("stopBtn").onclick = function() {
+  window.speechSynthesis.cancel();
+};

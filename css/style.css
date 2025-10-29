@@ -300,15 +300,19 @@ body.high-contrast section{
   background-color: #252222;
    color: #fff;
 }
-body.high-contrast label,
+body.high-contrast label{
+  
+  color:white;
+}
+
 body.high-contrast select,
 body.high-contrast input{
   background-color: #1b1818;
-  color:white
+  color:white;
 }
 
 
-body.high-contrast 
+
 body.high-contrast fieldset,
 body.high-contrast div,
 body.high-contrast address,
