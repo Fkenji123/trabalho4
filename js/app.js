@@ -89,3 +89,25 @@ function initScripts() {
     });
   }
 }
+// Menu de Acessibilidade
+
+let fontSize = 100;
+document.getElementById("accessibility-btn").onclick = function() {
+  document.getElementById("accessibility-menu").classList.toggle("hidden"); 
+};
+
+document.getElementById("increase-font").onclick = function() {
+  fontSize += 10;
+  document.body.style.fontSize = fontSize + "%";
+};
+
+
+document.getElementById("decrease-font").onclick = function() {
+  fontSize -= 10;
+  document.body.style.fontSize = fontSize + "%";
+};
+
+
+document.getElementById("toggle-contrast").onclick = function() {
+  document.body.classList.toggle("high-contrast");
+};
