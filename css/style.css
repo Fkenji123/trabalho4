@@ -245,3 +245,92 @@ nav a.active {
   text-decoration: underline;
   color: #e0ffe5;
 }
+
+#accessibility-menu {
+  position: fixed;
+  bottom: 90px;
+  right: 20px;
+  background: #d1ecdc;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  padding: 15px;
+  width: 220px;
+  z-index: 1000;
+  font-family: Arial, sans-serif;
+  color:rgb(16, 15, 15);
+}
+
+#accessibility-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 35px;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  z-index: 1000;
+}
+#accessibility-menu.hidden {
+  display: none;
+}
+#accessibility-menu button {
+  display: block;
+  margin: 8px 0;
+  width: 100%;
+  padding: 8px;
+  background: #a9c3de;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+  color: black;
+}
+#accessibility-menu button:hover {
+  background: #007bff;
+  color: white;
+}
+body.high-contrast nav a,
+body.high-contrast main.container,
+body.high-contrast section{
+  background-color: #252222;
+   color: #fff;
+}
+body.high-contrast label{
+  
+  color:white;
+}
+
+body.high-contrast select,
+body.high-contrast input{
+  background-color: #1b1818;
+  color:white;
+}
+
+
+
+body.high-contrast fieldset,
+body.high-contrast div,
+body.high-contrast address,
+body.high-contrast {
+  background-color: #000;
+  color: #fff;
+}
+body.high-contrast a {
+  color: yellow;
+}
+body.high-contrast #accessibility-menu {
+  background-color: #181717 !important;
+  color: #fff !important;
+  border-color: #fff !important;
+}
+
+body.high-contrast #accessibility-menu button {
+  background-color: #2f2c2c !important;
+  color: rgb(255, 255, 255) !important;
+  border: 1px solid #fff !important;
+}
