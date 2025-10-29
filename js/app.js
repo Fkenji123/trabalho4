@@ -111,3 +111,4 @@ document.getElementById("decrease-font").onclick = function() {
 document.getElementById("toggle-contrast").onclick = function() {
   document.body.classList.toggle("high-contrast");
 };
+};
